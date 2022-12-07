@@ -2,7 +2,7 @@ import React,{useState,useEffect}from 'react'
 import { View, Text, StyleSheet, FlatList} from 'react-native'
 import DadosCategorias from '../../Dados/DadosCategorias/DadosCategorias' 
 import FlatListCategorias from './FlatListCategorias'
-
+import firebase from '../../service';
 export default function Categorias(){
     return (
       <View style={Estilos.ConteinerCategorias}>
