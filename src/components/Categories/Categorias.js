@@ -2,11 +2,14 @@ import React,{useState,useEffect}from 'react'
 import { View, Text, StyleSheet, FlatList} from 'react-native'
 import DadosCategorias from '../../Dados/DadosCategorias/DadosCategorias' 
 import FlatListCategorias from './FlatListCategorias'
-import firebase from '../../service';
+
 export default function Categorias(){
+    
+   const [nome,setNome] = useState('carregando...')
+
     return (
       <View style={Estilos.ConteinerCategorias}>
-        <Text style={Estilos.TextoPrincipal}>Qual o Seu Desejo</Text>
+        <Text style={Estilos.TextoPrincipal}>{nome}</Text>
         <FlatList
          data={DadosCategorias}   
          keyExtractor={item => item.id}
