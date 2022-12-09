@@ -1,6 +1,6 @@
 import React from 'react';
 import { View,Text,Image,StyleSheet } from 'react-native';
-import firebase from '../../service';
+
 export default function FlatListDestaques(props) {
  return (
    <View style={Estilos.ConteinerImgDestaque}>
